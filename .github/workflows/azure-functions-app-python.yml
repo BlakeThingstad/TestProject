@@ -54,6 +54,9 @@ jobs:
         run: |
           az functionapp restart --name test-project-function-app --resource-group testprojectfunctionapp
 
+      - name: List Files in Current Directory
+        run: ls -R
+        
       - name: Deploy to Azure Functions via ZIP (Required for Flex Consumption)
         run: |
           az functionapp deployment source config-zip \
