@@ -27,7 +27,6 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          cd backend
           zip -r ../test-project-function-app.zip test-project-function-app
 
       - name: Upload artifact for deployment job
