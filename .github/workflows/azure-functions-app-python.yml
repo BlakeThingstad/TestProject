@@ -56,10 +56,6 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Restart Azure Function App (Fixes Potential Deployment Issues)
-        run: |
-          az functionapp restart --name test-project-function-app --resource-group testprojectfunctionapp
-
       - name: List Files in Current Directory
         run: ls -R
         
