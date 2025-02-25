@@ -27,7 +27,7 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          zip -r ../test-project-function-app.zip .
+          zip -r test-project-function-app.zip .
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
